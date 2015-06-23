@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">GraManager</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="deal_name">Deal name:</string>
+    <string name="deal_with">Deal with:</string>
+    <string name="deal_location">Deal location:</string>
+    <string name="deal_date">Deal date:</string>
+    <string name="deal_price">Price:</string>
+    <string name="gram">gram</string>
+    <string name="gram_just_g">g</string>
+    <string name="add_buyer">Add buyer</string>
+    <string name="del_buyer">Del Buyer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_buyer_edit">buyer_edit</string>
+    <string name="new_buyer_name">New buyer</string>
+    <string name="title_activity_deal__summary">Deal_Summary</string>
+    <string name="title_activity_deals">Deal Management</string>
+    <string name="title_activity_buyers_list">Buyers List</string>
+    <string name="title_activity_date_picker">Pick a date</string>
+
+</resources>

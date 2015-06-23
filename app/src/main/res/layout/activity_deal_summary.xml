@@ -1,0 +1,231 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="kael.kael.Deal_Summary"
+    android:id="@+id/deal_summary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Deal name:"
+        android:id="@+id/DealnameTV"
+        android:layout_below="@+id/DealInformationTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Deal Information"
+        android:id="@+id/DealInformationTV"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/dealNameText"
+        android:layout_alignBottom="@+id/DealnameTV"
+        android:layout_toEndOf="@+id/DealnameTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Deal with:"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/dealNameText"
+        android:layout_alignStart="@+id/DealnameTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Unit:"
+        android:id="@+id/UnitTV"
+        android:layout_below="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Calculations"
+        android:id="@+id/calcuTV"
+
+        android:paddingBottom="0dp"
+        android:paddingTop="40dp"
+        android:layout_below="@+id/pricePerUnitText"
+        android:layout_toEndOf="@+id/unitText"
+        android:layout_marginTop="65dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Customers:"
+        android:id="@+id/custoTV"
+        android:layout_alignBottom="@+id/customersText"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Already paid:"
+        android:id="@+id/alreadyTV"
+        android:layout_below="@+id/custoTV"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Unpaid yet:"
+        android:id="@+id/unpaidTV"
+        android:layout_below="@+id/alreadyTV"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Deal total value:"
+        android:id="@+id/totalValueTV"
+        android:layout_below="@+id/unpaidTV"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Deal total weight:"
+        android:id="@+id/totalweightTV"
+        android:layout_below="@+id/totalValueTV"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/dealWithText"
+        android:layout_above="@+id/UnitTV"
+        android:layout_toEndOf="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/pricePerUnitText"
+        android:layout_alignBottom="@+id/ppuTV"
+        android:layout_toEndOf="@id/ppuTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/customersText"
+        android:layout_below="@+id/calcuTV"
+        android:layout_toEndOf="@+id/custoTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/alreadyPayText"
+        android:layout_alignBottom="@+id/alreadyTV"
+        android:layout_toEndOf="@+id/alreadyTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/unpaidYetText"
+        android:layout_alignBottom="@+id/unpaidTV"
+        android:layout_toEndOf="@+id/unpaidTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/dealTotalValueText"
+        android:layout_above="@+id/totalweightTV"
+        android:layout_toEndOf="@+id/totalValueTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/dealTotalWeightText"
+        android:layout_alignBottom="@+id/totalweightTV"
+        android:layout_toEndOf="@+id/totalweightTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Price per unit:"
+        android:id="@+id/ppuTV"
+        android:layout_below="@+id/UnitTV"
+        android:layout_alignStart="@+id/UnitTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/unitText"
+        android:layout_above="@+id/ppuTV"
+        android:layout_toEndOf="@+id/UnitTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Location:"
+        android:id="@+id/locTV"
+        android:layout_below="@+id/ppuTV"
+        android:layout_alignStart="@+id/ppuTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Date:"
+        android:id="@+id/dateTV"
+        android:layout_below="@+id/locTV"
+        android:layout_alignStart="@+id/locTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/locationText"
+        android:layout_alignBottom="@+id/locTV"
+        android:layout_toEndOf="@+id/locTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/dateText"
+        android:layout_alignBottom="@+id/dateTV"
+        android:layout_toEndOf="@+id/dateTV" />
+
+</RelativeLayout>

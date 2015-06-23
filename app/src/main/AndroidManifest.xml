@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kael.kael">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".DealActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".buyer_edit"
+            android:label="@string/title_activity_buyer_edit"
+            android:parentActivityName=".DealActivity"
+            android:theme="@android:style/Theme.Dialog">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DealActivity" />
+        </activity>
+        <activity
+            android:name=".Deal_Summary"
+            android:label="@string/title_activity_deal__summary"
+            android:parentActivityName=".DealActivity"
+            android:theme="@android:style/Theme.Dialog">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DealActivity" />
+        </activity>
+        <activity
+            android:name=".DealsListActivity"
+            android:label="@string/title_activity_deals"
+            android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".buyersListActivity"
+            android:label="@string/title_activity_buyers_list"
+            android:parentActivityName=".DealActivity"
+            android:theme="@android:style/Theme.Dialog">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kael.kael.DealActivity" />
+        </activity>
+        <activity
+            android:name=".DatePickerActivity"
+            android:label="@string/title_activity_date_picker"
+            android:theme="@android:style/Theme.Dialog"></activity>
+    </application>
+
+</manifest>
