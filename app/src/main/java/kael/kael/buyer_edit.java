@@ -17,6 +17,7 @@ public class buyer_edit extends Activity {
     EditText nameEditText, orderedEditText;
     CheckBox hasPaid;
 
+    //
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
